@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}LENOVO Product_details
+{% endblock title %}
+{% block style %}
+     *{
+            margin: 0;
+            padding: 0;
+        }
+        .center{
+            text-align: center;
+            background-color: blueviolet;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+      .two{
+        padding-left: 130px;
+        padding-top: 50px;
+      }
+      .zero{
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        margin-left: 0px;
+        border: 2px solid red;
+         padding-bottom: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .three{
+        padding-top: 50px;
+        padding-left: 180px;
+      }
+      .one img{
+        height: 150px;
+        padding-left: 375px;
+        padding-top: 15px;
+      }
+      button{
+        height: 30px;
+        width: 90px;
+      }
+{% endblock style %}
+
+{% block body %}
+ <p class="center">Our Exclusive LENOVO products</p>
+    {% for i in product_details %}
+    <div class="zero">
+        <div class="one">
+            <img src="{{ i.product_image }}" alt="laptop">
+        </div>
+        <div class="two">
+        <h2 class="specification">{{ i.product_model }}</h2>
+            <ul>
+                <li>{{ i.product_spec1 }}</li>
+                <li>{{ i.product_spec2 }}</li>
+                <li>{{ i.product_spec3 }}</li>
+            </ul>
+        </div>
+        <div class="three">
+           <h1>₹{{ i.product_amount }}</h1>
+            <br>
+            <a href="form1"><button>Buy</button></a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock body %}

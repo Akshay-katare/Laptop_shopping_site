@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 40px;
+            background-color: black;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 0px;
+            position: fixed;
+            z-index: calc(1);
+            width: 1800px;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 25px 14px;
+            font-size: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* .right {
+            background-color: green;
+            border: 1px solid red;
+            display: inline-block;
+            width: 500px;
+            height: 100px;
+            padding-top: 800px;
+            margin-left: 50px;
+
+
+        } */
+
+        .left {
+            /* background-color: red; */
+            display: inline-block;
+            width: 900px;
+            height: 1000px;
+            margin-top: 0px;
+            padding-top: 00px;
+            margin-bottom: 0px;
+
+
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        img{
+            width: 900px;
+            /* border: 3px solid red; */
+            height: 750px;
+            margin-left: 10px;
+            padding-top: 0px;
+            margin-top: 0px;
+            margin-bottom: 100px;
+            padding-bottom: 200px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        footer {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: black;
+            color: white;
+            padding: 34px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            margin-top: 45px;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .name{
+            font-family: 'Baloo Bhai 2', cursive;            font-size: 45px;
+            text-align: center;
+            padding-top: 85px;
+            padding-bottom: 5px;
+            color: yellow;
+        }
+        .subname{
+            font-family: 'Baloo Bhai 2', cursive;            font-size: 20px;
+            padding-top: 12px;
+            padding-bottom: 5px;
+        }
+        .main{
+            display: flexbox;
+            flex-direction: column;
+            display: inline-block;
+            margin: 0;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 0px;
+            margin-left: 100px;
+            padding-top: 0px;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+            background-color: aqua;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-decoration: none;
+
+        }
+        .first{
+            height: 62px;
+            width: 420px;
+            background-color: blue;
+            color: white;
+            /* box-sizing: border-box;
+            border-radius: 10px; */
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            padding-top: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+
+        }
+        .second{
+            height: 30px;
+            width: 400px;
+            background-color: rgb(56, 166, 32);
+            color: aliceblue;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+        .third{
+            height: 30px;
+            width: 400px;
+            background-color: rgb(56, 166, 32);
+            color: aliceblue;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+        .fourth{
+            height: 30px;
+            width: 400px;
+            background-color: rgb(56, 166, 32);
+            color: aliceblue;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+        .fifth{
+            height: 30px;
+            width: 400px;
+            background-color: rgb(56, 166, 32);
+            color: aliceblue;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        h2{
+            font-size: 25px;
+
+        }
+        .middle{
+            display: flex;
+            flex-direction: row;
+
+        }
+        body{
+            background-image: url('https://linesquaretech.com/wp-content/uploads/2020/09/gis-bg.jpg');
+        }
+        a{
+        text-decoration: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin-login</a></li>
+
+        </ul>
+
+    </div>
+    <div class="intro">
+        <h1 class="name">JK Computers <sub class="subname">Bringing technology closer....</sub></h1></div>
+    <div class="middle">
+        <div class="left">
+            <img src="https://th.bing.com/th/id/R.476e9ec6197a4a076186d33b81bebb30?rik=O0enlef02HaP1Q&riu=http%3a%2f%2fwww.compu2nd.in%2fblog%2fbig_img%2f5947bdcfb309b00e8a65189626dc7377600.jpeg&ehk=%2b0uZAthBWeLD84kQ0Qd7m18bl7sOBK1LxPgjz0To%2baU%3d&risl=&pid=ImgRaw&r=0"  alt="dcimage"></div>
+            <div class="right">
+                <div class="main">
+                    <div class="first"><h2>Our Products</h2></div>
+                   <a href="hpfun"> <div class="second" ><h3>HP</h3></div> </a>
+                    <a href="lenovofun"> <div class="third"><h3>LENEVO</h3></div></a>
+                   <a href="asusfun">  <div class="fourth"><h3>ASUS</h3></div></a>
+                    <a href="dellfun"> <div class="fifth"><h3>DELL</h3></div></a>
+                </div>
+            </div>
+        </div>
+
+
+    <footer>
+        <p class="center">Copyright &copy; JK Computers & Laptops All rights reserved</p>
+    </footer>
+</body>
+
+</html>

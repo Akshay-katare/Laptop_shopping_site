@@ -1,0 +1,10 @@
+{% extends 'base_for_orders.html' %}
+{% block select %}
+
+    <select id="ProductSelect" name="select_product" required>
+        <option value="">Select Product</option>
+        {% for i in product_details %}
+        <option value="{{ i.product_model }}">{{ i.product_model }}</option>
+        {% endfor %}
+    </select>
+{% endblock select %}
